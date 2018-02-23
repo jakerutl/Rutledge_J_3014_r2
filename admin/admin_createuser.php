@@ -2,22 +2,29 @@
 require_once('phpscripts/config.php');
 confirm_logged_in();
 
+
   if(isset($_POST['submit'])){
     $fname = trim($_POST['fname']);
     $username = trim($_POST['username']);//add other coloumns to match below and also match the order in localhost
     $password = trim($_POST['password']);
-    $password= rand(1000,5000);
-    $password = password_hash($password, PASSWORD_DEFAULT);
+    $password_rand = rand(1000,5000);
+    $password_hashed = password_hash($password_rand, PASSWORD_DEFAULT);
+    $url = $_SERVER['HTTP_HOST']."/admin/admin_login.php";
     $email = trim($_POST['email']);
     $fail = trim($_POST['fail']);
     $lvllist = ($_POST['lvllist']);
     if(empty($lvllist)){
       $message = "Please select a user level.";
     }else{
-      $result = createUser($fname, $username, $password, $email, $fail, $lvllist); //this must line up with database, thats why we didn't use the homework one
-      $message = $result;
-      if(!empty($email)){
-        $recieve = sendPassword($email,$username,$password);
+      $result = createUser($fname, $username, $password_hashed, $email, $fail, $lvllist); //this must line up with database, thats why we didn't use the homework one
+      if($result){
+        if(!empty($email)){
+          $recieve = sendPassword($username, $password_rand, $email, $url);
+
+        }
+        redirect_to('admin_index.php');
+      }else{
+        $message = "Please fill out form correctly";
       }
     }
   }

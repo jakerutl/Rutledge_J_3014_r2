@@ -9,3 +9,5 @@ https://code.tutsplus.com/tutorials/how-to-implement-email-verification-for-new-
 http://php.net/manual/en/function.password-verify.php
 
 *used this for a lot for the hashing and password verify*
+
+https://www.youtube.com/watch?v=eP6DIY78U74
