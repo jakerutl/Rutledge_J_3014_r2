@@ -1,0 +1,134 @@
+body{
+  margin: 0;
+  font: 14px Helvetica, Arial;
+}
+
+.createUser{
+  margin: 0;
+  padding-top: 60px;
+  padding-left: 30px;
+}
+
+.user_signup{
+  padding-top: 40px;
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
+  margin-top: 50px;
+  border: solid #343a51 2px;
+  border-radius: 10px;
+}
+
+.signupForm{
+  margin: 0 auto;
+  margin-right: 0;
+  width: 100%;
+  height: 100%;
+  margin-top: 15px;
+  text-align: center;
+}
+
+.userLabels{
+  color: black;
+  font: 14px Helvetica, Arial;
+}
+
+.topBar{
+  width: 100%;
+  height: 80px;
+  overflow: hidden;
+  background-color: #343a51;
+}
+
+form{
+  float: right;
+  margin-right: 60px;
+  margin-top: 30px;
+}
+
+.error{
+  color: white;
+  font-size: 12px;
+  top: 0px;
+  float: right;
+  position: absolute;
+  overflow: hidden;
+}
+
+.btn{
+  text-decoration: none;
+  font-size: 14px;
+  padding: 0;
+  text-decoration: none;
+  border: none;
+  color: white;
+  background-color: transparent;
+  cursor: pointer;
+  transition: 0.2s;
+
+}
+
+.btn:hover{
+  color: #5d5d5d;
+}
+
+label{
+  color: white;
+  font-weight: bold;
+  font: 14px Helvetica, Arial;
+  background-color: transparent;
+  color: white;
+}
+
+.mainBody{
+  width: 100%;
+  height: 1000px;
+  background-color: #dee3e5;
+  margin: 0 auto;
+}
+
+.middle{
+  width: 960px;
+  height: 1000px;
+  margin: 0 auto;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+}
+
+
+.logOutBtn a{
+  color: white;
+  float: right;
+  margin-right: 60px;
+  margin-top: 30px;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+.logOutBtn a:hover{
+  color: #5d5d5d;
+}
+
+
+
+.TimeStamp{
+  margin: 0;
+  padding-left: 30px;
+  font-size: 12px;
+  /* margin-left: 60px;
+  margin-top: 60px; */
+}
+
+.timeMsg{
+  margin: 0;
+  /* font-size: 12px; */
+  padding-top: 60px;
+  padding-left: 30px;
+
+}
+
+.lastLogin{
+  margin: 0;
+  padding-top: 60px;
+  padding-left: 30px;
+}

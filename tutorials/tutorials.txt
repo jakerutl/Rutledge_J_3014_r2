@@ -1,0 +1,11 @@
+Tutorials http://talkerscode.com/webtricks/account-verification-system-through-email-using-php.php
+
+*used this one for the automatic email*
+
+https://code.tutsplus.com/tutorials/how-to-implement-email-verification-for-new-members--net-3824
+
+*used this one for the random password generator*
+
+http://php.net/manual/en/function.password-verify.php
+
+*used this for a lot for the hashing and password verify*
