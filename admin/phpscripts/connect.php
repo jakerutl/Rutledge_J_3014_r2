@@ -1,18 +1,18 @@
 <?php
 	// Set up connection credentials
-	$user = "root";
-	$pass = "root";
-	$url = "localhost";
-	$db = "db_movies2";
-
-	// $user = "jake";
-	// $pass = "rutledge12";
-	// $url = "jakerutledgecom.domaincommysql.com";
+	// $user = "root";
+	// $pass = "root";
+	// $url = "localhost";
 	// $db = "db_movies2";
 
+	$user = "jake";
+	$pass = "rutledge12";
+	$url = "jakerutledgecom.domaincommysql.com";
+	$db = "db_movies2";
 
-	// $link = mysqli_connect($url, $user, $pass, $db);
-	$link = mysqli_connect($url, $user, $pass, $db, "8889"); //Mac
+
+	$link = mysqli_connect($url, $user, $pass, $db);
+	// $link = mysqli_connect($url, $user, $pass, $db, "8889"); //Mac
 	// $link = mysqli_connect($url, $user, $pass, $db); //PC
 
 	/* check connection */
